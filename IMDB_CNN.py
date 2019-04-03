@@ -6,7 +6,8 @@ Created on Mon Apr  1 21:12:49 2019
 @author: vyom.agrwl
 """
 
-#This example demonstrates the use of Convolution1D for text classification.
+#Convolution1D for text classification || Simple Data 
+
 
 
 from __future__ import print_function
@@ -18,7 +19,6 @@ from keras.layers import Embedding
 from keras.layers import Conv1D, GlobalMaxPooling1D
 from keras.datasets import imdb
 
-# set parameters:
 max_features = 5000
 maxlen = 400
 batch_size = 32
@@ -71,7 +71,8 @@ model.add(Activation('sigmoid'))
 model.compile(loss='binary_crossentropy',
               optimizer='adam',
               metrics=['accuracy'])
-model.fit(x_train, y_train,
+
+model.fit(x_train, y_train, 
           batch_size=batch_size,
           epochs=epochs,
           validation_data=(x_test, y_test))
