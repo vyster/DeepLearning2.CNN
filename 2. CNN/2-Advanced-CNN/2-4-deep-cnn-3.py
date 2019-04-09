@@ -14,8 +14,7 @@ from keras.layers import BatchNormalization, Dropout
 X_train = X_train.reshape((X_train.shape[0], X_train.shape[1], X_train.shape[2], 1))
 X_test = X_test.reshape((X_test.shape[0], X_test.shape[1], X_test.shape[2], 1))
 # converting y data into categorical (one-hot encoding)
-y_train = to_categorical(y_train)
-y_test = to_categorical(y_test)
+
 
 def deep_cnn_advanced_nin():
     model = Sequential()
