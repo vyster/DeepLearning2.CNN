@@ -47,7 +47,6 @@ def deep_cnn():
     
     return model    
 
-model = deep_cnn()
 
 history = model.fit(X_train, y_train, batch_size = 50, validation_split = 0.2, epochs = 100, verbose = 0)
 
