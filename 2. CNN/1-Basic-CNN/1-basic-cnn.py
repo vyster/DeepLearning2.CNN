@@ -32,7 +32,11 @@ model.add(Activation('relu'))
 # pooling layer
 model.add(MaxPooling2D(pool_size = (2,2)))
 # prior layer should be flattend to be connected to dense layers
-
+model.add(Flatten())
+# dense layer with 50 neurons
+model.add(Dense(50, activation = 'relu'))
+# final layer with 10 neurons to classify the instances
+model.add(Dense(10, activation = 'softmax'))
 
 adam = optimizers.Adam(lr = 0.001)
 model.compile(loss = 'categorical_crossentropy', optimizer = adam, metrics = ['accuracy'])
