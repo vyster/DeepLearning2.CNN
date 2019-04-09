@@ -40,8 +40,7 @@ x_test = sequence.pad_sequences(x_test, maxlen=maxlen)
 print('x_train shape:', x_train.shape)
 print('x_test shape:', x_test.shape)
 
-print('Build model...')
-model = Sequential()
+
 
 # we start off with an efficient embedding layer which maps
 # our vocab indices into embedding_dims dimensions
