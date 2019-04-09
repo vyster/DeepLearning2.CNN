@@ -23,7 +23,7 @@ y_data = to_categorical(y_data)
 # partition data into train/test sets
 X_train, X_test, y_train, y_test = train_test_split(X_data, y_data, test_size = 0.3, random_state = 777)
 
-model = Sequential()
+
 
 # convolution layer
 model.add(Conv2D(input_shape = (X_data.shape[1], X_data.shape[2], X_data.shape[3]), filters = 10, kernel_size = (3,3), strides = (1,1), padding = 'valid'))
