@@ -29,7 +29,11 @@ def deep_cnn():
     model.add(Conv2D(filters = 50, kernel_size = (3,3), strides = (1,1), padding = 'same'))
     model.add(Activation('relu'))
     model.add(MaxPooling2D(pool_size = (2,2)))
-
+    model.add(Conv2D(filters = 50, kernel_size = (3,3), strides = (1,1), padding = 'same'))
+    model.add(Activation('relu'))
+    model.add(Conv2D(filters = 50, kernel_size = (3,3), strides = (1,1), padding = 'same'))
+    model.add(Activation('relu'))
+    model.add(MaxPooling2D(pool_size = (2,2)))
     
     # prior layer should be flattend to be connected to dense layers
     model.add(Flatten())
