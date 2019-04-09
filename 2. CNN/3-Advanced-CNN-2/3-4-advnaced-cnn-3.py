@@ -23,6 +23,21 @@ X_test = pad_sequences(X_test, maxlen = sequence_length)
 filter_sizes = [3, 4, 5]
 
 
+def convolution():
+    inn = Input(shape = (sequence_length, embedding_dimension, 1))
+    convolutions = []
+    # we conduct three convolutions & poolings then concatenate them.
+    for fs in filter_sizes:
+        conv = Conv2D(filters = 100, kernel_size = (fs, embedding_dimension), strides = 1, padding = "valid")(inn)
+        nonlinearity = Activation('relu')(conv)
+        maxpool = MaxPooling2D(pool_size = (sequence_length - fs + 1, 1), padding = "valid")(nonlinearity)
+        convolutions.append(maxpool)
+        
+    outt = concatenate(convolutions)
+    model = Model(inputs = inn, outputs = outt)
+        
+    return model
+
 def imdb_cnn_4():
     
     model = Sequential()
