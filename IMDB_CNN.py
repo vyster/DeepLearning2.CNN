@@ -65,7 +65,8 @@ model.add(Dropout(0.2))
 model.add(Activation('relu'))
 
 # We project onto a single unit output layer, and squash it with a sigmoid:
-
+model.add(Dense(1))
+model.add(Activation('sigmoid'))
 
 model.compile(loss='binary_crossentropy',
               optimizer='adam',
