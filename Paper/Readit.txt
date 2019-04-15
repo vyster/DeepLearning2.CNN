@@ -1,4 +1,5 @@
 Application Of Deep Learning using different CNN Structures in for Real-time Image Classification.
 
+Deep Learning has emerged as a new area in machine learning and is applied to a number of signal and image applications.
 
 keras
