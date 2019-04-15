@@ -1,5 +1,8 @@
 Application Of Deep Learning using different CNN Structures in for Real-time Image Classification.
 
+Keywords - Deep Learning, Deep CNNs, Image Classification,  Moving target detection, MNIST Image Dataset and Image Net.
+
+
 Deep Learning has emerged as a new area in machine learning and is applied to a number of signal and image applications.
 
 
