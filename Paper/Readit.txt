@@ -2,5 +2,7 @@ Application Of Deep Learning using different CNN Structures in for Real-time Ima
 
 Deep Learning has emerged as a new area in machine learning and is applied to a number of signal and image applications.
 
+
 keras
 The main purpose of the work presented in this paper, is to apply the concept of a Deep Learning algorithm namely, Convolutional neural networks (CNN) in image classification for application in Industries.
+This paper presents an approach for real-time training and testing for image classification for the real-time detection and recognition of targets in Industrial Setup to monitor Employees.
