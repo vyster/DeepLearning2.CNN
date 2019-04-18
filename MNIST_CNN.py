@@ -4,7 +4,7 @@ Created on Mon Apr  1 20:38:27 2019
 
 @author: vyom.agrwl
 """
-'''Trains a simple convnet on the MNIST dataset. atase
+'''Trains a simple convnet on the MNIST dataset. atas
 '''
 
 from __future__ import print_function
