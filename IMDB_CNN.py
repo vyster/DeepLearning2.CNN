@@ -76,4 +76,4 @@ model.fit(x_train, y_train,
           batch_size=batch_size,
           epochs=epochs,
           validation_data=(x_test, y_test))
-vyo
+v
