@@ -23,7 +23,3 @@ classifier.add(Convolution2D(384, 3, strides = (1, 1), padding='same', activatio
 
 classifier.add(Convolution2D(256, 3, strides=(1,1), padding='same', activation = 'relu'))
 
-classifier.add(MaxPooling2D(pool_size = (3, 3), strides = (2, 2)))
-
-classifier.add(Flatten())
-
