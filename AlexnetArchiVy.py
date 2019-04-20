@@ -32,7 +32,3 @@ classifier.add(Dropout(0.5))
 
 classifier.add(Dense(units = 4096, activation = 'relu'))
 classifier.add(Dropout(0.5))
-
-classifier.add(Dense(units = 38, activation = 'softmax'))
-
-classifier.summary()
