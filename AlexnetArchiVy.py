@@ -27,5 +27,3 @@ classifier.add(MaxPooling2D(pool_size = (3, 3), strides = (2, 2)))
 
 classifier.add(Flatten())
 
-classifier.add(Dense(units = 4096, activation = 'relu'))
-classifier.add(Dropout(0.5))
