@@ -10,7 +10,6 @@ classifier = Sequential()
 
 classifier.add(Convolution2D(96, 11, strides = (4, 4), padding = 'valid', input_shape=(227, 227, 3), activation = 'relu'))
 
-# Max Pooling Step 1
 classifier.add(MaxPooling2D(pool_size = (3, 3), strides = (2, 2)))
 
 # Convolution Step 2
