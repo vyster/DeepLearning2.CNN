@@ -5,7 +5,7 @@ from keras.layers import Flatten
 from keras.layers import Dense
 from keras.layers import Dropout
 
-# Initializing the CNN
+
 classifier = Sequential()
 
 # Convolution Step 1
