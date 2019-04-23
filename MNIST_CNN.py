@@ -5,7 +5,7 @@ Created on Mon Apr  1 20:38:27 2019
 @author: vyom.agrwl
 """
 '''Trains a simple convnet on the MNIST datasets Also B Level added now! Also B Level added now!
-Also B Level added now!
+Also B Level added now! Also B Level added now!
 '''
 
 from __future__ import print_function
