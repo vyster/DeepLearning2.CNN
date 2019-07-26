@@ -7,5 +7,3 @@ from keras.layers import Dropout
 
 v = sequential()
 
-v.add(
- 
