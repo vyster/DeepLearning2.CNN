@@ -5,4 +5,4 @@ from keras.layers import MaxPooling2D
 from keras.layers import Dense
 from keras.layers import Dropout
 
-v = sequential
+v = sequential()
